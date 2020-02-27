@@ -1,6 +1,12 @@
+package com.quence.mysql;
 import java.io.Serializable;
 
-public class Database implements Serializable  {
+public class DataMapping implements Serializable  {
+	int iddirector;
+	String FilmName;
+	String FilmYear;
+	String Name;
+	String Surname;
 
 	int idfilm;
 	public int getIdfilm() {
@@ -39,10 +45,7 @@ public class Database implements Serializable  {
 	public void setSurname(String surname) {
 		Surname = surname;
 	}
-	int iddirector;
-	String FilmName;
-	String FilmYear;
-	String Name;
-	String Surname;
+
+	
 	
 }
