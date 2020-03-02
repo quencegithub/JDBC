@@ -4,7 +4,7 @@ import java.io.Serializable;
 public class DataMapping implements Serializable  {
 	int iddirector;
 	String FilmName;
-	String FilmYear;
+	String Year;
 	String Name;
 	String Surname;
 
@@ -27,11 +27,11 @@ public class DataMapping implements Serializable  {
 	public void setFilmName(String filmName) {
 		FilmName = filmName;
 	}
-	public String getFilmYear() {
-		return FilmYear;
+	public String getYear() {
+		return Year;
 	}
-	public void setFilmYear(String filmYear) {
-		FilmYear = filmYear;
+	public void setYear(String Year) {
+		this.Year = Year;
 	}
 	public String getName() {
 		return Name;
@@ -42,10 +42,14 @@ public class DataMapping implements Serializable  {
 	public String getSurname() {
 		return Surname;
 	}
-	public void setSurname(String surname) {
-		Surname = surname;
+	public void setSurname(String  surname) {
+		this.Surname = surname;
 	}
-
+	@Override
+public String toString(){
+	return "DirectorName:" + getName() + "    Director Surname:"+ getSurname()+ "    FilmYear:" + getYear() + "    FilmName:" +getFilmName()  ; 
+	
+}
 	
 	
 }
